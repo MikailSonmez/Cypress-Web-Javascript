@@ -5,7 +5,7 @@ const loginPage = require("../../pageMethods/loginPage")
 
 Given('user is on signUp page', () => {
     loginPage
-        .goLogin("isparta")
+        .goLogin("malatya")
         .clickSignupButton()
     signUp.checkTitle("Üye, Kayıt Ol - Yemek Sepeti")
 })
