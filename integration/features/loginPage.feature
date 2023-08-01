@@ -19,7 +19,7 @@ Feature: Login Page
     Then user should see empty password message "<emptyPassMessage>"
     Examples:
       | email                  | emptyPassMessage          |
-      | enes.erdogan@gmail.com | Lütfen şifrenizi giriniz. |
+      | A@gmail.com | Lütfen şifrenizi giriniz. |
 
   @FalseLogin
   Scenario Outline: False Password and Mail
@@ -30,7 +30,7 @@ Feature: Login Page
     Then user should see popup message "<message>"
     Examples:
       | email         | password | message                                                                        |
-      | mail@mail.com | password | Hatalı giriş. Lütfen kullanıcı adı ve şifrenizi kontrol edip tekrar deneyiniz. |
+      | AB@mail.com | password | Hatalı giriş. Lütfen kullanıcı adı ve şifrenizi kontrol edip tekrar deneyiniz. |
 
   @SuccessLogin
   Scenario Outline:  Success Login with <email>
@@ -42,4 +42,4 @@ Feature: Login Page
     Then user should see name "<name>"
     Examples:
       | email                  | password  | name         |
-      | enes.erdgn32@gmail.com | Enes.1995 | Enes Erdoğan |
+      | A@gmail.com | Enes.1995 | Enes Erdoğan |
