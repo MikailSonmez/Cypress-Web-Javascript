@@ -4,8 +4,8 @@ const loginPage = require("../../pageMethods/loginPage")
 
 Given('user is on login page', () => {
     loginPage
-        .goLogin("isparta")
-        .checkTitle("Isparta Online Yemek Siparişi, Paket Servis - Yemek Sepeti")
+        .goLogin("malatya")
+        .checkTitle("title")
 })
 When('user enters email {string}', (mail) => {
     loginPage.typeEmail(mail)
