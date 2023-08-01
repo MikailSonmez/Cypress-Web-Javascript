@@ -42,4 +42,4 @@ Feature: Login Page
     Then user should see name "<name>"
     Examples:
       | email                  | password  | name         |
-      | A@gmail.com | Enes.1995 | Enes Erdoğan |
+      | A@gmail.com | Pass1. | name |
